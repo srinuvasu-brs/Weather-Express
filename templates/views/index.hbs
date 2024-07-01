@@ -1,0 +1,40 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo.jpg">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    {{>header}}
+        <main role="main" class="container pt-5">
+            <form action="">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-6">
+                        <div class="input">
+                            <input type="text" name="wsearch" class="input-search form-control" placeholder="Search for the city.." autofocus>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="location">
+                        <div class="location-city"></div>
+                        <div class="location-date"></div>
+                    </div>
+                    <div class="temperature">
+                        <div class="temperature-temp"><span></span></div>
+                        <div class="temperature-type"></div>
+                    </div>
+                </div>
+            </form>
+            <p class="mt-4" id="message-1"></p>
+            <p class=" mt-4" id="message-2"></p>
+        </main>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
