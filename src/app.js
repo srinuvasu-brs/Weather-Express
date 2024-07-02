@@ -5,7 +5,7 @@ const hbs  = require('hbs')
 
 //to store our express applcation
 const app = express()
-const port = process.env.PORT || 40001
+const port = process.env.PORT || 4000
 
 // ====>define paths for express config
 const publicDirectoryPath = path.join(__dirname, '../public')
